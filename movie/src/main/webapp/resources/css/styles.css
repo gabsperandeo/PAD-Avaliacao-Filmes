@@ -1,0 +1,74 @@
+.h1 {
+     font-style: italic;
+     font-family: Lucida Handwriting;
+     font-size: 40px;
+     color: #00bfff;        
+     text-shadow: 2px 2px 3px #B5ECFF;
+ }
+ 
+ 
+ .label {
+ 	 font-size: bold;
+     font-family: Candara;
+     color: #00bfff;   
+     text-shadow: 1px 1px 1px #B5ECFF;     
+ }
+ 
+ 
+ .botao {
+     background-color: #87cefa;
+	 border: none;
+	 color: white;
+	 padding: 15px 32px;
+	 text-align: center;
+	 text-decoration: none;
+	 font-family: Lucida Handwriting;
+	 display: inline-block;
+	 font-size: 16px;
+	 margin: 4px 2px;
+	 transition-duration: 0.3s;
+ }
+ 
+ .botao:hover {
+  background-color: #5BB7D6;
+  color: white;
+}
+ 
+.body {
+	font-family: Arial Narrow;
+	font-size: bold;
+}
+
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #85D9F6;
+}
+
+ .item {
+     background-color: #87cefa;
+	 border: dotted 2px;
+	 color: white;
+	 font-size: bold;
+	 text-decoration: none;
+	 font-family: Arial Narrow;
+	 display: inline-block;
+	 font-size: 16px;
+	 margin: 4px 2px;
+	 transition-duration: 0.3s;
+ }
+ 
+ .item:hover {
+  background-color: #5BB7D6;
+  color: white;
+}
+
+.erro {
+	font-family: Arial Narrow;
+	font-size: bold;
+    color: #87cefa;   
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Nota</title>
+	<h:outputStylesheet library="css" name="styles.css"/>
+</h:head>
+<h:body>
+	<h1 class="h1">Nota do Filme</h1>
+	<h:form class="body">
+		<h:panelGrid columns="2">
+		<h:outputLabel value="Avaliador:" class="label" />
+		<h:outputText value="#{filmeBean.filme.nome}"/>
+			
+		<h:outputLabel value="Filme:" class="label" />
+		<h:outputText
+			value="#{empty filmeBean.filme.filminho ? 'Não informado' : filmeBean.filme.filminho}" />
+			
+		<h:outputLabel value="Nota:" class="label" />
+		<h:outputText value="#{filmeBean.filme.nota}">
+			<f:convertNumber maxFractionDigits="2"/>
+		</h:outputText>
+      
+		<h:outputLabel value="Recomenda:" class="label" />
+			 <h:outputText value="#{filmeBean.filme.recomendo ? 'Sim' : 'Não'}"/>
+		</h:panelGrid>
+		<h:button value="Voltar" outcome="/index" class="botao" />
+	</h:form>
+</h:body>
+</html>
