@@ -26,7 +26,7 @@ public class FilmeBean {
 	}
 	
 	public List<SelectItem> getListaFilmes() {
-		List<SelectItem> filmes = new ArrayList<>();
+		List<SelectItem> filmes = new ArrayList<SelectItem>();
 		filmes.add(new SelectItem("Harry Potter and the Prisoner of Azkaban", "Harry Potter and the Prisoner of Azkaban"));
 		filmes.add(new SelectItem("Interstellar", "Interstellar"));
 		filmes.add(new SelectItem("Intouchables", "Intouchables"));
